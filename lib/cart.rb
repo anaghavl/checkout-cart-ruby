@@ -7,8 +7,8 @@ class Cart
   # Initialize the cart with items and available discounts
   def initialize(discounts)
     @discounts = discounts
-    strawberry = Item.new('SR1', 'STRAWBERRY', 5.0)
-    green_tea = Item.new('GR1', 'GREEN TEA', 3.11)
+    strawberry = Item.new('SR1','STRAWBERRY', 5.0)
+    green_tea = Item.new('GR1','GREEN TEA', 3.11)
     coffee = Item.new('CF1','COFFEE', 11.23)
     @line_items = []
     @shop = Shop.new(strawberry, green_tea, coffee)
