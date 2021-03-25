@@ -1,7 +1,7 @@
 class LineItem
 
   # Line Item is associated with both item and the cart. 
-  # This class will have code from one item in the shop 
+  # This class will have item-code from one item in the shop 
   # and the price of it which can be changed due to any 
   # offers applied.
   

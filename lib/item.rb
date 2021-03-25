@@ -9,5 +9,15 @@ class Item
     @name = name
     @price = price
   end
+
+  # Return as a row in the table
+  def to_s
+    table = Terminal::Table.new(headings: ['Item Code', 'Name', 'Price'], rows: [ to_a ])
+  end
+
+  # Return array of the object
+  def to_a
+    [ @code, @name, @price ]
+  end
 end
 
